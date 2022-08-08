@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Insert Data"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/edittex_bg"
+        android:hint="Name"
+        android:padding="9dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/age_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Age"
+        android:padding="9dp"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:background="@drawable/edittex_bg"
+        app:layout_constraintEnd_toEndOf="@+id/name_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
+
+    <EditText
+        android:id="@+id/designation_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Designation"
+        android:padding="9dp"
+        android:textSize="20dp"
+        android:background="@drawable/edittex_bg"
+        app:layout_constraintEnd_toEndOf="@+id/age_edittext"
+        app:layout_constraintStart_toStartOf="@+id/age_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/age_edittext" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:text="Submit"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/designation_edittext"
+        app:layout_constraintStart_toStartOf="@+id/designation_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/designation_edittext" />
+
+    <Button
+        android:id="@+id/receive_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/button_bg"
+        android:text="Receive"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/designation_edittext"
+        app:layout_constraintStart_toStartOf="@+id/designation_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/submit_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
